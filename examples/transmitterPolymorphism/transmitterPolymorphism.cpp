@@ -92,21 +92,23 @@ float frequency_plan = 915.0; // Frequency (in MHz)
 
 // ───── Runtime Globals ────────────────────────────────
 
-// uint8_t devEUI[8] = {
-//   /* your devEUI */
-// };  // Device EUI (64-bit)
+uint8_t appEUI[8] = {
+  0x99, 0xFD, 0x40, 0x07, 0xE0, 0x48, 0x49, 0x16
+}; // appEUI (64-bit)
 
-// uint8_t appEUI[8] = {
-//   /* your AppEUI */
-// }; // Application EUI (64-bit)
+uint8_t appKey[16] = {
+  0xED, 0xA9, 0x26, 0xE4, 0xA1, 0xB5, 0xB5, 0x67,
+  0xAE, 0x88, 0xF9, 0x04, 0x2E, 0x4D, 0x1E, 0xC7
+}; // appKey (128-bit)
 
-// uint8_t appKey[16] = {
-//   /* your appKEY */  
-// }; // AppKey (AES-128)
+const uint8_t hmacKey[16] = {
+  0x7C, 0xBD, 0x57, 0xAF, 0x4B, 0x28, 0x77, 0x42,
+  0xFF, 0x75, 0x65, 0xCE, 0x6F, 0x01, 0x8A, 0x2B
+}; // hmacKey (128-bit)
 
-// const uint8_t hmacKey[16] = {
-//    /* yourHMAC key */
-// }; // Shared HMAC key (16 bytes)
+uint8_t devEUI[8] = {
+  0xC0, 0xE4, 0x5A, 0x14, 0x91, 0xB0, 0x6B, 0xBA
+}; // GatewayEUI (64-bit)
 
 
 
